@@ -1,0 +1,45 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar styles */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn {
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
