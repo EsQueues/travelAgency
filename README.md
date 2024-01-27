@@ -7,7 +7,7 @@ Welcome to the Travel Agency web application! This application is designed to he
 Follow these steps to install and run the application:
 
 1. Clone the repository to your local machine:
-bash:  git clone https://github.com/your-username/travelAgency.git
+bash:  git clone https://github.com/EsQueues/travelAgency.git
 -----------------------------------------------------------------
 2.Navigation->
 cd travelAgency
