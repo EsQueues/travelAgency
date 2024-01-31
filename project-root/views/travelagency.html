@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,6 @@
     <title>Travel Agency</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -18,10 +17,48 @@
 
 <div class="container mt-4">
     <h2>Welcome to our Travel Agency</h2>
-    <form action="/travelagency" method="POST">
+    <form id="travelForm" action="/travelagency" method="POST">
+        <div class="form-group">
+            <label for="ticketType">Ticket Type:</label>
+            <select class="form-control" id="ticketType" name="ticketType" required>
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="travelerName">Traveler's Name:</label>
+            <input type="text" class="form-control" id="travelerName" name="travelerName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="airTransportation">Air Transportation Preferences:</label>
+            <input type="text" class="form-control" id="airTransportation" name="airTransportation" required>
+        </div>
+
+        <!-- Add more fields as needed -->
+
         <div class="form-group">
             <label for="country">Country:</label>
             <input type="text" class="form-control" id="country" name="country" required>
+        </div>
+
+        <div class="form-group">
+            <label for="city">Destination City:</label>
+            <select class="form-control" id="city" name="city" required>
+                <option value="city1">Uralsk</option>
+                <option value="city2">New York</option>
+                <option value="city3">Aktau</option>
+                <option value="city3">Kostanay</option>
+
+                <option value="city3">Astana</option>
+
+                <option value="city3">Almaty</option>
+
+                <option value="city3">Janakala</option>
+
+            </select>
         </div>
 
         <div class="form-group">
@@ -29,19 +66,39 @@
             <input type="text" class="form-control" id="hotel" name="hotel" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Show Tour</button>
+        <div class="form-group">
+            <label for="arrivalDate">Arrival Date:</label>
+            <input type="date" class="form-control" id="arrivalDate" name="arrivalDate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="departureDate">Departure Date:</label>
+            <input type="date" class="form-control" id="departureDate" name="departureDate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="adults">Number of Adults:</label>
+            <input type="number" class="form-control" id="adults" name="adults" required>
+        </div>
+
+        <div class="form-group">
+            <label for="children">Number of Children:</label>
+            <input type="number" class="form-control" id="children" name="children" required>
+        </div>
+
+        <div class="form-group">
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" class="form-control" id="rooms" name="rooms" required>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="calculateTour()">Calculate Tour</button>
     </form>
     <div class="mt-4" id="tourResult">
     </div>
 </div>
 
-<footer class="mt-5 text-center">
-    <p>Your Name - Group Name</p>
-</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-integrity="sha384-B4gt1jrGC7Jh..."
-crossorigin="anonymous"></script>
-
+</html>

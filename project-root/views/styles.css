@@ -1,22 +1,24 @@
-/* styles.css */
 
-/* Body styles */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
 }
 
-/* Container styles */
+
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation Bar styles */
+
 .navbar {
-    background-color: #343a40;
+    background-color: chartreuse;
 }
 
 .navbar-brand {
@@ -24,20 +26,21 @@ body {
     font-weight: bold;
 }
 
-/* Button styles */
 .btn {
     margin-top: 10px;
+    cursor: pointer;
 }
 
-/* Footer styles */
 footer {
     margin-top: 50px;
     padding: 10px;
     background-color: #343a40;
     color: white;
+    text-align: center;
+    border-top: 2px solid #5e6266;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;
