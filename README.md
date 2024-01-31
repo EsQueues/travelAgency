@@ -20,6 +20,5 @@ npm install
 npm start
 !!!The server will start, and you can access the application in your browser at http://localhost:3000.
 
-![image](https://github.com/EsQueues/travelAgency/assets/122588120/0a52918f-2a15-45b0-95ad-278e9b0d85a8)
-![image](https://github.com/EsQueues/travelAgency/assets/122588120/3e9d1d66-51d2-4f78-a7a5-47d797afd178)
+![image](https://github.com/EsQueues/travelAgency/assets/122588120/a3a9bfda-127b-4ef8-8932-4a34b7cf1e13)
 
