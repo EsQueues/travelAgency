@@ -1,21 +1,36 @@
 const express = require('express');
-
 const path = require('path');
 const router = express.Router();
 
-// Display the HTML template on GET request
 router.get('/', (req, res) => {
     const filePath = path.join(__dirname, '..', 'views', 'travelagency.html');
     res.sendFile(filePath);
 });
 
-// Handle POST request and calculate tour result
 router.post('/', (req, res) => {
     const country = req.body.country;
+    const city = req.body.city;
     const hotel = req.body.hotel;
-    const result = `You selected ${country} and ${hotel}. Tour cost: $500`;
+    const arrivalDate = req.body.arrivalDate;
+    const departureDate = req.body.departureDate;
+    const adults = req.body.adults;
+    const children = req.body.children;
+    const rooms = req.body.rooms;
 
-    res.send(result);
+
+    const result = {
+        country: country,
+        city: city,
+        hotel: hotel,
+        arrivalDate: arrivalDate,
+        departureDate: departureDate,
+        adults: adults,
+        children: children,
+        rooms: rooms,
+        tourCost: 500
+    };
+
+    res.json(result);
 });
 
 module.exports = router;

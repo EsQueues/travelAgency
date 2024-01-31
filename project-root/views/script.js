@@ -1,4 +1,3 @@
-// script.js
 function calculateTour() {
     const country = document.getElementById('country').value;
     const city = document.getElementById('city').value;
@@ -9,7 +8,17 @@ function calculateTour() {
     const children = parseInt(document.getElementById('children').value, 10);
     const rooms = parseInt(document.getElementById('rooms').value, 10);
 
+    if (!country || !city || !hotel || !arrivalDate || !departureDate || isNaN(adults) || isNaN(children) || isNaN(rooms)) {
+        alert('Please fill in all the required fields.');
+        return;
+    }
+
     const totalPrice = calculatePrice(adults, children, rooms);
+
+    if (isNaN(totalPrice)) {
+        alert('Invalid input. Please enter valid numbers for adults, children, and rooms.');
+        return;
+    }
 
     const resultHtml = `
         <h4>Your Tour Details:</h4>
